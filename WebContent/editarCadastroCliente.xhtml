@@ -1,0 +1,224 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+ 	<p:link href="./css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	 <p:link href="./css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+   	
+   	 <link rel="stylesheet" href="resources/css/login.min.css" />
+   	<link rel="stylesheet" href="resources/Styles.css" />
+   	<script src="resources/js/materialize.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+   	
+    <style>
+
+element.style {
+}
+
+h2 {
+    /* font-size: 12px; */
+    margin: 1.78rem 0 1.424rem 0;
+}
+    
+    
+            body {background-color: #eeeeee; font-size: 12px}
+       
+    .btnSalvar {
+ background-color: #1d75ce;
+ color: white;
+ border: 0;
+ height: 30px;
+ font-size: 14px;
+ }
+ 
+ .btnNovo {
+ background-color: #161617;
+ color: white;
+ border: 2;
+ height: 30px;
+ font-size: 14px;
+ }
+element.style {
+}
+
+.ui-panelgrid .ui-panelgrid-cell {
+    border-width: 1px;
+    /* border-style: solid; */
+    border-color: inherit;
+    padding: 4px 10px;
+}
+td.ui-panelgrid-cell {
+}
+.ui-panelgrid .ui-panelgrid-cell {
+    border-width: 1px;
+    /* border-style: solid; */
+    border-color: inherit;
+    padding: 4px 10px;
+}
+td, th {
+    padding: 0;
+}
+.ui-panelgrid .ui-panelgrid-cell {
+    border-width: 1px;
+    /* border-style: solid; */
+    border-color: inherit;
+    padding: 4px 10px;
+}
+	 /* Mensagem da tela: */
+.ui-growl{
+    position:fixed;
+    top:12%;
+    right:8%;
+    width:310px;
+}  
+
+
+element.style {
+}
+
+h2 {
+    font-size: 2.22rem;
+    line-height: 110%;
+    margin: 1.rem 0 1.424rem 0;
+}
+
+.btn, .btn-large, .btn-flat {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    /* line-height: 36px; */
+    outline: 0;
+    /* padding: 0 2rem; */
+    text-transform: inherit;
+    /* vertical-align: middle; */
+    -webkit-tap-highlight-color: transparent;
+}
+
+element.style {
+}
+.ui-state-active .ui-icon {
+    background-image: url(/language/javax.faces.resource/images/ui-icons_38667f_256x240.png.xhtml?ln=primefaces-aristo);
+}
+.ui-state-default .ui-icon {
+    background-image: url(/language/javax.faces.resource/images/ui-icons_38667f_256x240.png.xhtml?ln=primefaces-aristo);
+}
+.ui-radiobutton-icon {
+    margin-left: 1px;
+}
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.ui-icon-bullet {
+    background-position: -81px -146px;
+}	
+
+ .ui-widget {
+    /* font-size: 0.85em; */
+}
+.ui-widget-content {
+    border: 1px solid #a8a8a8;
+    background: #ffffff;
+    color: #4f4f4f;
+}
+
+
+.ui-widget-content {
+    border: 1px solid #a8a8a8;
+    background: #e8e8e8;
+    color: #4f4f4f;
+}
+
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield {
+    background: #eceaea;
+    -moz-box-shadow: inset 0 2px 2px #8f8f8f;
+    -webkit-box-shadow: inset 0 2px 2px #8f8f8f;
+    box-shadow: inset 0 2px 2px #8f8f8f;
+    color: #313131;
+}
+
+.ui-panelgrid .ui-panelgrid-cell {
+    border-width: 1px;
+    /* border-style: solid; */
+    border-color: inherit;
+    padding: 4px 10px;
+}
+ </style>
+    <div class="col-md-8">
+    
+            <h2>Editar Cadastro Cliente</h2>
+        
+        <br />
+        <p:growl id="msg"/>
+        <h:form class="form-horizontal" role="form">
+ 
+            <div class="form-group">
+                <h:outputLabel for="inputuser" value="Nome do Cliente:"
+                    styleClass="col-sm-3 control-label" />
+                <div class="col-sm-6">
+                    <h:inputText  class="form-control"  value="#{clienteBean.cliente.nome}"
+                        id="inputuser" required="true"
+                        pt:placeholder="Digite o nome do cliente"
+                        requiredMessage="é necessário que você informe o nome do Cliente.">
+                        <f:ajax event="blur" render="m_inputuser" />
+                    </h:inputText>
+                    <h:message id="m_inputuser" for="inputuser" style="color:#D74937;" />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <h:outputLabel for="valor" value="Sobrenome:"
+                    styleClass="col-sm-3 control-label"  />
+                <div class="col-sm-4">
+                    <h:inputText  class="form-control"  value="#{clienteBean.cliente.sobrenome}"/>
+                    <h:message id="m_password" for="valor" style="color:#D74937;" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h:outputLabel  value="Idade:"
+                    styleClass="col-sm-3 control-label" />
+                <div class="col s3 input-field">
+                         <h:inputText  class="form-control"  value="#{clienteBean.cliente.idade}"
+                        id="idade" required="true"
+                        pt:placeholder="Digite a Idade"
+                        requiredMessage="é necessário que você a idade.">
+                        <f:ajax event="blur" render="idade" />
+                    </h:inputText>  
+                </div>
+            </div>
+            
+                <div class="form-group">
+                <h:outputLabel  value="Data Nascimento"
+                    styleClass="col-sm-3 control-label" />
+                <div class="col s3 input-field">
+                		<p:outputLabel for="data-entrada" />
+				<p:calendar id="data-entrada"  pattern="dd/MM/yyyy" mask="99/99/9999" effect="fold" 
+					maxlength="0" value="#{clienteBean.cliente.dataNascimento}" />     
+                </div>
+            </div>
+
+            
+            
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-4">
+                <p:panelGrid  columns="3">
+	          <h:commandButton id="btnSalvar"  value="Alterar"   styleClass="btnSalvar" actionListener="#{clienteBean.editar}" action="#{index.ListaCliente}" resetValues="true">
+	          </h:commandButton>
+	          <p/>
+		      <h:commandButton id="btnNovo" value="Home"     styleClass="btnNovo" action="#{index.Home}" immediate="true">
+		      </h:commandButton>
+		      </p:panelGrid>
+                </div>
+            </div>     
+
+        </h:form>
+    </div>
+</ui:composition>

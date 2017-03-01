@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+      
+     
+    <h:head>
+     
+   <style>
+
+.login-page h1
+{
+    font-weight: 300;
+}
+.login-page h1 small
+{
+    color: gray;
+}
+.login-page .form-group
+{
+    padding: 8px 0;
+}
+.login-page .form-content
+{
+ </style>
+        <title>Login</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="resources/css/login.min.css" />
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="resources/js/jquery-2.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="resources/js/materialize.min.js"></script>
+    </h:head>
+    <h:body styleClass="grey">
+        
+        <div class="valign-wrapper" id="login-page">
+            <div class="container">
+                <div class="center-align">
+                    <div class="row">
+                        <div class="col s6 offset-s3">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="left-align">
+                                        <h:form id="form-login">
+                                            <p:growl autoUpdate="true" />
+                                            <div class="row">
+                                                <div class="col s12 input-field">
+                                                    <h:inputText id="usuario"  required="false" requiredMessage="Usuário Obrigatorio!" />
+                                                    <h:outputLabel for="usuario" value="Usuário" />
+                                                </div>
+                                                <div class="col s12 input-field">
+                                                    <h:inputSecret id="senha" required="false"  requiredMessage="Senha Obrigatorio!" />
+                                                    <h:outputLabel for="senha" value="Senha"  />
+                                                </div>
+                                                <div class="col s12 input-field">
+                                                   <h:commandLink value="Acessar" styleClass="btn btn-large"  required="true" action="#{LoginMB.envia}"  />
+                                                </div>
+                                            </div>
+                                        </h:form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).on("ready",function(){
+                $('#login-page').css({'height': window.innerHeight + 'px'});
+            });
+        </script>
+    </h:body>
+</html>
+

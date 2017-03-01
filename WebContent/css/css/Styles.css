@@ -1,0 +1,179 @@
+
+element.style {
+    z-index: 1001;
+}
+
+.ui-growl {
+    position: fixed;
+    top: 600px;
+    right: 20px;
+    width: 301px;
+}
+.ui-widget {
+    font-family: Arial,sans-serif;
+    font-size: 1.1em;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from body
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #fff;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+    font-size: 16px;
+    text-align: justify;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+    font-size: 16px;
+    text-align: justify;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+    font-size: 16px;
+    text-align: justify;
+}
+Inherited from html
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+Pseudo ::before element
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" xmlns:b="http://bootsfaces.net/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+	 <p:link href="./css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	 <p:link href="./css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+<h:head>
+	<title>Lista Cliente</title>
+<style>
+#rodape {
+	background-color: #167A89;
+	color: #F7FBFC;
+}
+
+#bordas {
+	background-color: #F8F8FC;
+}
+ #navbar-inverse {
+    background-color: #202435;
+    border-color: #080808;
+}
+.ui-growl{
+    position:fixed;
+    top:10%;
+    right:20%;
+    width:301px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #e8e1e1;
+}
+
+.ui-widget-header {
+    border: 1px solid #563636;
+    background: #927a7a url(/KleberVagaJuniorBKPS/faces/javax.faces.resource/images/ui-bg_highlight-soft_100_c4c4c4_1x100.png?ln=primefaces-aristo) 50% 50% repeat-x;
+    background: #c4c4c4 linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #bdc8d8 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background: #c4c4c4 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    color: #333;
+    font-weight: bold;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #a8a8a8;
+    background: #c4c4c4 url(/KleberVagaJuniorBKPS/faces/javax.faces.resource/images/ui-bg_highlight-hard_80_c4c4c4_1x100.png?ln=primefaces-aristo) 50% 50% repeat-x;
+    background: #c4c4c4 linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #c4c4c4 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background: #c4c4c4 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    font-weight: bold;
+    color: #0e0e0e;
+    text-shadow: 0px 1px 0px rgba(241, 240, 240, 0.7);
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #f7eeee;
+    background: #3c0b0b url(/KleberVagaJuniorBKPS/faces/javax.faces.resource/images/ui-bg_highlight-hard_80_c4c4c4_1x100.png?ln=primefaces-aristo) 50% 50% repeat-x;
+    background: #c4c4c4 linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #efecec -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background: #c4c4c4 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    font-weight: bold;
+    color: #0e0e0e;
+    text-shadow: 0px 1px 0px rgba(241, 240, 240, 0.7);
+}
+.ui-widget-content {
+    /* border: 1px solid #a8a8a8; */
+    background: #ffffff;
+    color: #4f4f4f;
+}
+.ui-widget-header {
+    border: 1px solid #f7f3f3;
+    background: #927a7a url(/KleberVagaJuniorBKPS/faces/javax.faces.resource/images/ui-bg_highlight-soft_100_c4c4c4_1x100.png?ln=primefaces-aristo) 50% 50% repeat-x;
+    background: #c4c4c4 linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #bdc8d8 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background: #c4c4c4 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    color: #333;
+    font-weight: bold;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+}
+
+
+element.style {
+
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.ui-icon-bullet {
+    background-position: -81px -146px;
+}	
+
+</style>
+</h:head>
+<h:body>
+		<b:container>
+			<h2>
+				<h:outputText value="Lista de Cliente Cadastrado" />
+			</h2>
+			<h:form>
+				<p:commandButton id="btnNovo" value="Cadastrar Novo Cliente" 
+					action="#{clienteBean.newCliente}" />
+			</h:form >
+			<br />
+			<br />
+				<h:form id="form">
+				<p:growl id="msg"/>
+                    <p:dataTable id="tbl" value="#{clienteBean.clienteList}" var="cliente" scrollable="true" scrollHeight="150"
+                                 currentPageReportTemplate="| Mostrando {startRecord} - {endRecord} | Existem {totalRecords} Cliente cadastrado:  | Página {currentPage} de {totalPages} |"
+                                paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} 
+					 			{Exporters}" paginator="true" rows="8" style="margin-bottom:20px" >
+                                     
+					
+					<f:facet name="{Exporters}">
+						<h:commandLink>
+							<p:graphicImage value="/images/excel.png" width="28" />
+							<p:dataExporter type="xls" target="tbl" fileName="cliente" />
+						</h:commandLink>
+						<h:commandLink>
+							<p:graphicImage value="/images/pdf.png" width="26" />
+							<p:dataExporter type="pdf" target="tbl" fileName="cliente" />
+						</h:commandLink>
+					</f:facet>
+					<p:column filterBy="#{cliente.nome}" width="200" headerText="Nome Cliente" >
+						<h:outputText value="#{cliente.nome}" />
+					</p:column>
+						<p:column width="200" headerText="Sobrenome" >
+						<h:outputText value="#{cliente.sobrenome}" />
+					</p:column>
+						<p:column  width="200" headerText="Idade" >
+						<h:outputText value="#{cliente.idade}" />
+					</p:column>
+					<p:column width="200" headerText="Data Nascimento">
+						<h:outputText value="#{cliente.dataNascimento}" >
+						<f:convertDateTime pattern="dd/MM/yyyy" />
+						</h:outputText>
+					</p:column>
+
+					     <p:column exportable="false" width="50">
+				     	<h:commandLink  id="grow" action="#{clienteBean.edit(cliente)}">
+				     	<h:graphicImage  library="img1" name="editar.png" style="border:0"/>
+				     	</h:commandLink>
+				     	</p:column>
+						<p:column width="50">
+				     	<h:commandLink   id="exclui" actionListener="#{clienteBean.delete(cliente)}" onclick="if(!confirm('Confirma a exclusão do Cliente: #{cliente.nome}?')) return false;">
+				     	<h:graphicImage library="img1" name="excluir.png" style="border:0"/>
+				     	</h:commandLink>
+				     	</p:column>
+				     	
+				</p:dataTable>
+			</h:form >
+
+		</b:container >
+</h:body>
+</html>

@@ -1,0 +1,318 @@
+element.style {
+}
+
+.ui-button-text-only .ui-button-text {
+    padding: .3em 1em;
+}
+.ui-button .ui-button-text {
+    display: block;
+    line-height: normal;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+Inherited from button#j_idt20:btnNovo.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only
+.ui-button {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin-right: .1em;
+    text-decoration: none !important;
+    cursor: pointer;
+    text-align: center;
+    zoom: 1;
+    overflow: visible;
+}
+[role="button"] {
+    cursor: pointer;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #a8a8a8;
+    background: #c4c4c4 url(/idiomas/faces/javax.faces.resource/images/ui-bg_highlight-hard_80_c4c4c4_1x100.png?ln=primefaces-aristo) 50% 50% repeat-x;
+    background: #c4c4c4 linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #c4e4c8 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background: #c4c4c4 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    font-weight: bold;
+    color: #4f4f4f;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+}
+.ui-widget {
+    font-family: Arial,sans-serif;
+    font-size: 1.1em;
+}
+.ui-widget {
+    font-family: Arial,sans-serif;
+    font-size: 1.1em;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #9e4444;
+    background: #c3e1e6 url(/idiomas/faces/javax.faces.resource/images/ui-bg_highlight-hard_80_c4c4c4_1x100.png?ln=primefaces-aristo) 50% 50% repeat-x;
+    background: #c3e1e6 linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #c3e1e6 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background: #c3e1e6 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    font-weight: bold;
+    color: #4f4f4f;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #863737;
+    background: #c3e1e6 url(/idiomas/faces/javax.faces.resource/images/ui-bg_highlight-hard_80_c4c4c4_1x100.png?ln=primefaces-aristo) 50% 50% repeat-x;
+    background: #c3e1e6 linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #c3e1e6 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background: #c3e1e6 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    font-weight: bold;
+    color: #4f4f4f;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #c37575;
+    background: #d1edef url(/idiomas/faces/javax.faces.resource/images/ui-bg_highlight-hard_80_c4c4c4_1x100.png?ln=primefaces-aristo) 50% 50% repeat-x;
+    background: #d1edef linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #d1edef -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(196, 196, 196);
+    background: #d1edef -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    /* font-weight: bold; */
+    color: #4f4f4f;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+Inherited from body
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #fff;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+    font-size: 16px;
+    text-align: justify;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+    font-size: 16px;
+    text-align: justify;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body {
+    margin: 0;
+    padding: 3;
+    background: #0080c0;
+    font-size: 16px;
+    text-align: justify;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+    font-size: 16px;
+    text-align: justify;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body, th, td, input, textarea, select, option {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #83826A;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+    font-size: 16px;
+    text-align: justify;
+}
+Inherited from html
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+Pseudo ::before element
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
